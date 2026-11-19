@@ -13,15 +13,19 @@
 <!-- NAV -->
 <nav>
   <div class="nav-logo">Ablaye<span>.SOW</span></div>
-  <ul class="nav-links">
+  <ul class="nav-links" id="navLinks">
     <li><a href="#about">À propos</a></li>
     <li><a href="#experience">Expérience</a></li>
     <li><a href="#data-projects">Projets Data</a></li>
     <li><a href="#skills">Compétences</a></li>
     <li><a href="#education">Formation</a></li>
     <li><a href="#projects">Galsen New Tech</a></li>
+    <li><a href="#certifications">Certifications</a></li>
   </ul>
   <a href="mailto:sowablaye1802@gmail.com" class="nav-cta">Me contacter</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -332,72 +336,6 @@
   <a href="https://github.com/asow1802" class="project-link more-link" target="_blank" rel="noopener">Voir mon GitHub →</a>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-header reveal">
-    <span class="section-num">06</span>
-    <h2 class="section-title">Galsen New Tech</h2>
-    <div class="section-line"></div>
-  </div>
-
-  <div class="project-grid">
-
-    <div class="project-card reveal">
-      <div class="project-role">Fondateur — Studio Tech</div>
-      <div class="project-name">Galsen New Tech</div>
-      <div class="project-desc">
-        Studio que j'ai fondé pour concevoir des applications mobiles et sites web pour des entrepreneurs et associations sénégalais, en combinant développement assisté par IA et stack React Native / Firebase / Supabase.
-      </div>
-      <div class="project-tags">
-        <span class="tag">React Native</span>
-        <span class="tag">Firebase</span>
-        <span class="tag">Supabase</span>
-        <span class="tag">IA / Vibe coding</span>
-      </div>
-      <a href="https://galsennewtech.com" class="project-link" target="_blank" rel="noopener">galsennewtech.com →</a>
-    </div>
-
-    <div class="project-card reveal" style="transition-delay:0.1s">
-      <div class="project-role">Produit — App mobile</div>
-      <div class="project-name">Sutura</div>
-      <div class="project-desc">
-        Application mobile de gestion de couture et plateforme communautaire de la mode sénégalaise, portée par Galsen New Tech. Backend 100% Firebase (Auth, Firestore, Cloud Functions, Storage, FCM).
-      </div>
-      <div class="project-tags">
-        <span class="tag">React Native</span>
-        <span class="tag">Expo</span>
-        <span class="tag">Firebase</span>
-      </div>
-    </div>
-
-    <div class="project-card reveal" style="transition-delay:0.2s">
-      <div class="project-role">Produit — App mobile</div>
-      <div class="project-name">Hair221</div>
-      <div class="project-desc">
-        Application mobile pour digitaliser les ateliers de coiffure au Sénégal : prise de rendez-vous, gestion des services/horaires, découverte de salons par géolocalisation.
-      </div>
-      <div class="project-tags">
-        <span class="tag">React Native</span>
-        <span class="tag">TypeScript</span>
-        <span class="tag">Firebase</span>
-      </div>
-    </div>
-
-    <div class="project-card reveal" style="transition-delay:0.3s">
-      <div class="project-role">Produit — Site web</div>
-      <div class="project-name">Dialègne Sa Kanam (DSK)</div>
-      <div class="project-desc">
-        Site vitrine pour une association communautaire de Dialègne, Kaolack (Sénégal) : jeunesse, éducation, solidarité, programmes et événements.
-      </div>
-      <div class="project-tags">
-        <span class="tag">React</span>
-        <span class="tag">Vite</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-header reveal">
@@ -507,10 +445,76 @@
   </div>
 </section>
 
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-num">06</span>
+    <h2 class="section-title">Galsen New Tech</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="project-grid">
+
+    <div class="project-card reveal">
+      <div class="project-role">Fondateur — Studio Tech</div>
+      <div class="project-name">Galsen New Tech</div>
+      <div class="project-desc">
+        Studio que j'ai fondé pour concevoir des applications mobiles et sites web pour des entrepreneurs et associations sénégalais, en combinant développement assisté par IA et stack React Native / Firebase / Supabase.
+      </div>
+      <div class="project-tags">
+        <span class="tag">React Native</span>
+        <span class="tag">Firebase</span>
+        <span class="tag">Supabase</span>
+        <span class="tag">IA / Vibe coding</span>
+      </div>
+      <a href="https://galsennewtech.com" class="project-link" target="_blank" rel="noopener">galsennewtech.com →</a>
+    </div>
+
+    <div class="project-card reveal" style="transition-delay:0.1s">
+      <div class="project-role">Produit — App mobile</div>
+      <div class="project-name">Sutura</div>
+      <div class="project-desc">
+        Application mobile de gestion de couture et plateforme communautaire de la mode sénégalaise, portée par Galsen New Tech. Backend 100% Firebase (Auth, Firestore, Cloud Functions, Storage, FCM).
+      </div>
+      <div class="project-tags">
+        <span class="tag">React Native</span>
+        <span class="tag">Expo</span>
+        <span class="tag">Firebase</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal" style="transition-delay:0.2s">
+      <div class="project-role">Produit — App mobile</div>
+      <div class="project-name">Hair221</div>
+      <div class="project-desc">
+        Application mobile pour digitaliser les ateliers de coiffure au Sénégal : prise de rendez-vous, gestion des services/horaires, découverte de salons par géolocalisation.
+      </div>
+      <div class="project-tags">
+        <span class="tag">React Native</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Firebase</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal" style="transition-delay:0.3s">
+      <div class="project-role">Produit — Site web</div>
+      <div class="project-name">Dialègne Sa Kanam (DSK)</div>
+      <div class="project-desc">
+        Site vitrine pour une association communautaire de Dialègne, Kaolack (Sénégal) : jeunesse, éducation, solidarité, programmes et événements.
+      </div>
+      <div class="project-tags">
+        <span class="tag">React</span>
+        <span class="tag">Vite</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- CERTIFICATIONS -->
 <section id="certifications" style="padding:4rem">
   <div class="section-header reveal">
-    <span class="section-num">06</span>
+    <span class="section-num">07</span>
     <h2 class="section-title">Certifications</h2>
     <div class="section-line"></div>
   </div>
@@ -543,9 +547,11 @@
     <li><a href="#hero">Accueil</a></li>
     <li><a href="#about">À propos</a></li>
     <li><a href="#experience">Expérience</a></li>
-    <li><a href="#projects">Projets</a></li>
+    <li><a href="#data-projects">Projets Data</a></li>
     <li><a href="#skills">Compétences</a></li>
     <li><a href="#education">Formation</a></li>
+    <li><a href="#projects">Galsen New Tech</a></li>
+    <li><a href="#certifications">Certifications</a></li>
   </ul>
   <div class="footer-copy">© 2026 Ablaye SOW</div>
 </footer>
@@ -563,6 +569,24 @@
   }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
   reveals.forEach(el => observer.observe(el));
+
+  // Menu mobile
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
 </script>
 
 </body>
